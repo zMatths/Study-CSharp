@@ -1,0 +1,19 @@
+void ExibirNota()
+{
+    int notaMedia = 6;
+
+    Console.WriteLine("Digite a sua nota:");
+    int notaInt = int.Parse(Console.ReadLine());
+
+    if (notaInt >= notaMedia)
+    {
+        Console.WriteLine("Nota suficiente para aprovação");
+    }
+
+    else
+    {
+        Console.WriteLine("Você não foi aprovado");
+    }
+}
+
+ExibirNota();

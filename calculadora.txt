@@ -1,0 +1,88 @@
+List<string> bandas = new List<string>();
+
+void ExibirMenu()
+{
+    Console.WriteLine("****************************************");
+    Console.WriteLine("Digite 1 para salvar sua banda favoriat: ");
+    Console.WriteLine("Digite 2 para salvar sua banda favoriat: ");
+    Console.WriteLine("****************************************");
+    string opcaoMenu = Console.ReadLine()!;
+    int intOpcaoMenu = int.Parse(opcaoMenu);
+
+    if (intOpcaoMenu == 1)
+    {
+        ExibirBandas();
+    } else if (intOpcaoMenu == 2)
+    {
+        ExibirListadas();
+    } else
+    {
+        Console.WriteLine("Você saiu!");
+    }
+}
+
+void ExibirBandas()
+{
+    Console.Clear();
+    Console.WriteLine("*****************");
+    Console.WriteLine("Salve a sua banda");
+    Console.WriteLine("*****************");
+    Console.Write("Digite a sua banda favorita: ");
+    string nomeBanda = Console.ReadLine()!;
+    bandas.Add(nomeBanda);
+    Console.WriteLine($"A banda {nomeBanda} foi registrada com sucesso!");
+    ExibirMenu();
+}
+
+void ExibirListadas()
+{
+    Console.Clear();
+    Console.WriteLine("*****************************");
+    Console.WriteLine("Sua Lista de bandas favoritas");
+    Console.WriteLine("*****************************");
+    for (int i = 0; i < bandas.Count; i++)
+    {
+        Console.WriteLine($"Bandas: {bandas[i]}");
+    }
+    Console.Write("Digite qualquer tecla para voltar ao Menu");
+    Console.ReadKey();
+    Console.Clear();
+    ExibirMenu();
+}
+
+ExibirMenu();
+
+void Calculadora()
+{
+    Console.Write("Digite o primeiro número: ");
+    int numeroA = int.Parse(Console.ReadLine()!);
+
+    Console.Write("Digite o segundo número: ");
+    int numeroB = int.Parse(Console.ReadLine()!);
+
+    Console.Write("Digite a conta q deseja: ");
+    string operador = Console.ReadLine()!;
+
+    if (operador == "+") 
+    { 
+        int resultado = numeroA + numeroB;
+        Console.WriteLine($"O resultado de {numeroA} + {numeroB} é {resultado}");
+    } else if (operador == "-") {
+        int resultado = numeroA - numeroB;
+        Console.WriteLine($"O resultado de {numeroA} - {numeroB} é {resultado}");
+    } else if (operador == "/") {
+        int resultado = numeroA / numeroB;
+        Console.WriteLine($"O resultado de {numeroA} / {numeroB} é {resultado}");
+    } else if (operador == "*") {
+        int resultado = numeroA * numeroB;
+        Console.WriteLine($"O resultado de {numeroA} * {numeroB} é {resultado}");
+    } else if (operador == "%"){
+        int resultado = numeroA % numeroB;
+        Console.WriteLine($"O resultado de {numeroA} % {numeroB} é {resultado}");
+    }
+}
+
+Calculadora();
+
+
+

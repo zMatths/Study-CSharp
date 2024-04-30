@@ -1,0 +1,3 @@
+List<string> linguagens = new List<string>{"c#", "python", "java", "javascrip"};
+int posicao = int.Parse(Console.ReadLine());
+Console.WriteLine(linguagens[posicao]);

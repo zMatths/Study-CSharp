@@ -1,0 +1,15 @@
+/home/matheus/study/Study-CSharp/bin/Debug/net8.0/Study-CSharp
+/home/matheus/study/Study-CSharp/bin/Debug/net8.0/Study-CSharp.deps.json
+/home/matheus/study/Study-CSharp/bin/Debug/net8.0/Study-CSharp.runtimeconfig.json
+/home/matheus/study/Study-CSharp/bin/Debug/net8.0/Study-CSharp.dll
+/home/matheus/study/Study-CSharp/bin/Debug/net8.0/Study-CSharp.pdb
+/home/matheus/study/Study-CSharp/obj/Debug/net8.0/Study-CSharp.GeneratedMSBuildEditorConfig.editorconfig
+/home/matheus/study/Study-CSharp/obj/Debug/net8.0/Study-CSharp.AssemblyInfoInputs.cache
+/home/matheus/study/Study-CSharp/obj/Debug/net8.0/Study-CSharp.AssemblyInfo.cs
+/home/matheus/study/Study-CSharp/obj/Debug/net8.0/Study-CSharp.csproj.CoreCompileInputs.cache
+/home/matheus/study/Study-CSharp/obj/Debug/net8.0/Study-CSharp.sourcelink.json
+/home/matheus/study/Study-CSharp/obj/Debug/net8.0/Study-CSharp.dll
+/home/matheus/study/Study-CSharp/obj/Debug/net8.0/refint/Study-CSharp.dll
+/home/matheus/study/Study-CSharp/obj/Debug/net8.0/Study-CSharp.pdb
+/home/matheus/study/Study-CSharp/obj/Debug/net8.0/Study-CSharp.genruntimeconfig.cache
+/home/matheus/study/Study-CSharp/obj/Debug/net8.0/ref/Study-CSharp.dll
