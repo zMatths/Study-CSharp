@@ -1,8 +1,9 @@
 ﻿// back sound
 string mensagemDeBoasVindas = "\nBoas Vindas ao Back Music";
 // List<string> listaBandas = new List<string>();
-
 Dictionary<string, List<int>> bandasRegistradas = new Dictionary<string, List<int>>();
+bandasRegistradas.Add("Linkin Park", new List<int> {10, 8, 3});
+bandasRegistradas.Add("U2", new List<int>());
 
 void ExibirLogo()
 {
@@ -89,13 +90,35 @@ void ExibirTituloDaOpcao(string titulo)
 
 }
 
-void ExibirNotaBandas()
-{
+// void ExibirNotaBandas()
+// {
 
-}
+// }
 
 void AvaliarUmaBanda()
 {
-    
+    Console.Clear();
+    ExibirTituloDaOpcao("Avaliar banda");
+    Console.Write("Digite o nome da banda que desja avaliar: ");
+    string nomeDaBanda = Console.ReadLine()!;
+    if (bandasRegistradas.ContainsKey(nomeDaBanda))
+    {
+        Console.WriteLine($"Qual a nota q a banda {nomeDaBanda} merece?");
+        int nota = int.Parse(Console.ReadLine()!);
+        bandasRegistradas[nomeDaBanda].Add(nota);
+        Console.WriteLine($"\nA nota {nota} foi registrada com sucesso para a banda {nomeDaBanda}");
+        Thread.Sleep(2000);
+        Console.Clear();
+        ExibirOpcoesDoMenu();
+
+    } else
+    {
+        Console.WriteLine($"\nO nome da banda {nomeDaBanda} não foi encontrada.");
+        Console.WriteLine("Digite uma tecla para voltar ao menu: ");
+        Console.ReadKey();
+        Console.Clear();
+        ExibirOpcoesDoMenu();
+    }
+
 }
 ExibirOpcoesDoMenu();
